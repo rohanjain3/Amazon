@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <link rel="icon" href="/Project-1/assets/amazon_icon_logo.png"/>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<img src="./assets/amazon_logo_dark.png" alt="Amazon.com"/>
+
+<div id="signInBorder">
+    <p id="SignInTxt">Sign in</p>
+
+    <label>
+        <strong>Email or mobile phone number</strong><br>
+        <input type="email" name="email" value="" required>
+    </label>
+
+    <br>
+
+    <div>
+       <a href="password.html"> <button id="amazon" >Continue</button></a>
+    </div>
+    <div class="pp">
+        <p>By continuing, you agree to Amazon's <a href="#" id="first">Conditions of Use</a> and <a href="#" id="first">Privacy Notice</a>.</p>
+    </div>
+    <div class="dropdown">
+        <p>
+            <button class="button" onclick="toggleDropdown()">▶</button><a href="#">Need help?</a>
+        </p>
+        <div class="dropdown-content" id="helpDropdown">
+            <a href="#">Forgot your password?</a>
+            <br>
+            <a href="#">Other issues with Sign-In</a>
+        </div>
+    </div>
+    <hr>
+    <div class="do">
+        <strong>Buying for work?</strong><br>
+        <a href="#">Shop on Amazon Business</a>
+    </div>
+
+</div>
+<div class="createAccount">
+    <h2><span>New to Amazon?</span></h2>
+    <button>Create your Amazon account</button>
+</div>
+<hr id="footer">
+
+<div class="extra">
+    <p class="links"><a href="#" id="first">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Help</a></p>
+    <p class="links" id="special">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+</div>
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('active');
+    }
+    function toggleEmail() {
+        var emailSection = document.querySelector('.email');
+        emailSection.classList.toggle('active');
+    }
+    function toggleDropdown() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
